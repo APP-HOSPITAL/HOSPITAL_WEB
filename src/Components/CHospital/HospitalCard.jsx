@@ -1,31 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
 
-const data = [
-  {
-    "idHospital": 1,
-    "nameHospital": "Hospital del Valle",
-    "latitude": "-17.420927134746194",
-    "longitude": "-66.13318206886449",
-    "description": "Hospital salva vidas xd",
-    "address": "av Nose donde",
-    "creationDate": "2023-10-29T14:17:19.623",
-    "modificationDate": "2023-10-29T14:17:19.623",
-    "status": "AC"
-  },
-  {
-    "idHospital": 2,
-    "nameHospital": "Hospital Deos",
-    "latitude": "12313132-17.420927134746144",
-    "longitude": "-66.13318206886411",
-    "description": "descripcion del hospital",
-    "address": "av. iris juatemala",
-    "creationDate": "2023-10-31T02:04:21.9",
-    "modificationDate": "2023-10-31T02:04:21.9",
-    "status": "AC"
-  }
-];
-
 function TablaHospital() {
 
   const [dates,setDates] = useState([])
@@ -52,6 +27,7 @@ function TablaHospital() {
               <th className="px-4 py-2">Fecha de Creación</th>
               <th className="px-4 py-2">Fecha de Modificación</th>
               <th className="px-4 py-2">Estado</th>
+              <th className="px-4 py-2"></th>
             </tr>
           </thead>
           <tbody>
@@ -66,6 +42,15 @@ function TablaHospital() {
                 <td className="border px-4 py-2">{hospital.creationDate}</td>
                 <td className="border px-4 py-2">{hospital.modificationDate}</td>
                 <td className="border px-4 py-2">{hospital.status}</td>
+                <td className="border px-4 py-2">
+            
+                <button
+                  onClick={() => handleEdit(tarea.idTask)}
+                  className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600"
+                >
+                  Editar
+                </button>
+              </td>
               </tr>
             ))}
           </tbody>

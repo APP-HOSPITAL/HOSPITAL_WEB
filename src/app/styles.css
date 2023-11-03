@@ -50,8 +50,8 @@
   
   button {
     border-radius: 20px;
-    border: 1px solid #ff4b2b;
-    background-color: #ff4b2b;
+    border: 1px solid #3b2521;
+    background-color: hsl(330, 5%, 15%);
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
@@ -165,9 +165,9 @@
   }
   
   .overlay {
-    background: #ff416c;
-    background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    background: #9aff41;
+    background: -webkit-linear-gradient(to right, #2f2bff, #41b3ff);
+    background: linear-gradient(to right, #5d2bff, #41a6ff);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -248,7 +248,7 @@
   }
   
   footer i {
-    color: red;
+    color: rgb(0, 255, 106);
   }
   
   footer a {

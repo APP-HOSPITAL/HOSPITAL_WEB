@@ -1,9 +1,9 @@
 "use client"
-import { useState ,useEffect} from "react";
 import axios from "axios"
+import { Overpass_Mono } from "next/font/google";
+import FormHospital from "@/Components/CHospital/FormHospital";
+import Map from "@/Components/Mapa";
 import BaseComponent from "@/Components/BaseComponent";
-import FormTask from "@/Components/TaskForm";
-import TaskList from "@/Components/TasksList";
 
 
 const App = () => {
@@ -11,8 +11,7 @@ const App = () => {
 
   return (
     <BaseComponent>
-      <FormTask></FormTask>
-      <TaskList></TaskList>
+      <Map></Map>
     </BaseComponent>
   );
 };
